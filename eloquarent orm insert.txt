@@ -1,0 +1,16 @@
+
+
+insert code 
+
+
+
+insert 
+public function post_area(Request $request)
+    {
+        $area = new Area();
+        $area->area_name = $request->add_area;
+        $area->save();
+        return redirect()->back()->with('message','Area has been Created!');
+    }
+
+
